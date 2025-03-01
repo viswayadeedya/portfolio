@@ -1,0 +1,59 @@
+<!-- <div #projectsSection class="opacity-0 translate-y-100">
+  <div
+    #heading
+    class="px-20 pt-30 transition-all opacity-0 translate-x-50 duration-700 ease-in"
+  >
+    <h1 class="text-slate-300 text-4xl flex justify-center">Projects</h1>
+  </div>
+
+  <div
+    #content
+    class="flex justify-center p-20 cursor-pointer opacity-0 translate-x-50 transition-all duration-700 ease-out"
+  >
+    <div
+      class="w-[720px] h-[350px] bg-neutral-800 rounded-md text-white p-4 overflow-hidden relative transition-all duration-700 hover:scale-95 hover:shadow-xl hover:shadow-neutral-600"
+    >
+      <p
+        class="text-lg underline underline-offset-8 text-slate-300 pb-6 pt-6 pl-6 transition-opacity duration-300"
+        [ngClass]="{ 'opacity-0': hasScrolled, 'opacity-100': !hasScrolled }"
+      >
+        My Work
+      </p>
+      <p
+        class="text-lg underline hover-animate underline-offset-8 text-slate-300 pb-6 pt-6 pl-6 transition-opacity duration-300 absolute top-4 left-4"
+        [ngClass]="{ 'opacity-100': hasScrolled, 'opacity-0': !hasScrolled }"
+      >
+        See All Projects ->
+      </p>
+
+      <div class="-rotate-17 flex position-abs" id="scrollText">
+        <img src="/becker.png" class="img-specs" />
+        <img src="/jbhunt.png" class="img-specs" />
+        <img src="/expense.png" class="img-specs filter-img" />
+        <img src="/yourstory.png" class="img-specs filter-img" />
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="flex justify-center px-20 pt-30 pb-15 text-slate-300 text-4xl">
+  Projects
+</div>
+
+<div class="px-20 grid grid-cols-2 gap-4 place-items-center">
+  <img src="/becker.png" class="hover:scale-125 img-specs cursor-pointer" />
+  <img src="/jbhunt.png" class="hover:scale-125 img-specs cursor-pointer" />
+  <img
+    src="/expense.png"
+    class="hover:scale-125 img-specs cursor-pointer filter-img"
+  />
+  <img
+    src="/yourstory.png"
+    class="hover:scale-125 img-specs cursor-pointer filter-img"
+  />
+</div>
+<div class="flex justify-center pb-20 cursor-pointer hover-animate">
+  <p class="text-slate-300 p-0 hover:underline hover:underline-offset-8">
+    See all Projects ->
+  </p>
+</div>

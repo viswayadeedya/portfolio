@@ -1,0 +1,23 @@
+.filter{
+    position: absolute;
+    top: 12.5rem;
+    z-index: -1;
+    filter: invert(0.3);
+}
+
+.img-specs{
+    width: 2rem;
+    height: 2rem;
+}
+
+.img-filter{
+    filter: invert(1);
+}
+
+.specs{
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: 10rem;
+    right: 7rem;
+}

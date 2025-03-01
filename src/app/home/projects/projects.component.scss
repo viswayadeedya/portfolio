@@ -1,0 +1,35 @@
+// @keyframes horizontal-scroll {
+//     0% {
+//       transform: translateX(20%);
+//     }
+//     100% {
+//       transform: translateX(-30%);
+//     }
+//   }
+  
+//   .animate-horizontal-scroll {
+//     animation: horizontal-scroll 0.03s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+//   }
+  
+  /* Image Styles */
+  .img-specs {
+    margin-right: 1rem;
+    width: 20rem;
+    height: 15rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover-animate:hover {
+    transform: scale(1.2);
+  }
+  
+  .filter-img {
+    filter: invert(1);
+  }
+  
+//   .position-abs {
+//     position: absolute;
+//     top: 10rem;
+//     left: -2rem;
+//   }
+  
