@@ -1,59 +1,67 @@
-<!-- <div #projectsSection class="opacity-0 translate-y-100">
-  <div
-    #heading
-    class="px-20 pt-30 transition-all opacity-0 translate-x-50 duration-700 ease-in"
-  >
-    <h1 class="text-slate-300 text-4xl flex justify-center">Projects</h1>
-  </div>
-
-  <div
-    #content
-    class="flex justify-center p-20 cursor-pointer opacity-0 translate-x-50 transition-all duration-700 ease-out"
-  >
-    <div
-      class="w-[720px] h-[350px] bg-neutral-800 rounded-md text-white p-4 overflow-hidden relative transition-all duration-700 hover:scale-95 hover:shadow-xl hover:shadow-neutral-600"
+<div id="projects" class="pl-20">
+  <div class="flex px-20 pt-30 text-slate-300 text-4xl">What I've Built.</div>
+  <div class="px-20 text-zinc-500">Here are some of my projects.</div>
+  <div class="flex px-20 pb-10 cursor-pointer">
+    <a
+      routerLink="/projects"
+      class="text-slate-300 p-0 hover:underline hover:underline-offset-8"
     >
-      <p
-        class="text-lg underline underline-offset-8 text-slate-300 pb-6 pt-6 pl-6 transition-opacity duration-300"
-        [ngClass]="{ 'opacity-0': hasScrolled, 'opacity-100': !hasScrolled }"
-      >
-        My Work
-      </p>
-      <p
-        class="text-lg underline hover-animate underline-offset-8 text-slate-300 pb-6 pt-6 pl-6 transition-opacity duration-300 absolute top-4 left-4"
-        [ngClass]="{ 'opacity-100': hasScrolled, 'opacity-0': !hasScrolled }"
-      >
-        See All Projects ->
-      </p>
+      See all Projects ->
+    </a>
+  </div>
+</div>
 
-      <div class="-rotate-17 flex position-abs" id="scrollText">
-        <img src="/becker.png" class="img-specs" />
-        <img src="/jbhunt.png" class="img-specs" />
-        <img src="/expense.png" class="img-specs filter-img" />
-        <img src="/yourstory.png" class="img-specs filter-img" />
+<div class="px-20 grid grid-cols-2 gap-6">
+  <a href="https://beckerlogistics.com/">
+    <div class="cursor-pointer pl-20">
+      <img src="/becker.png" class="img-specs" />
+      <div class="text-slate-300 py-2 text-lg border-b-2 border-b-zinc-500">
+        Becker Logistics
+      </div>
+      <div class="text-zinc-500">
+        <span class="font-bold"
+          >Developed a logistics-focused Angular application</span
+        >
+        that seamlessly integrated three data sources, enabling precise shipment
+        rate calculations and reducing manual errors by
+        <span class="font-bold">50%</span>, enhancing client satisfaction and
+        operational efficiency.
+      </div>
+      <div class="text-zinc-500">
+        <span class="font-bold">Streamlined authentication</span> by unifying
+        three applications into a single sign-in system, reducing login time by
+        40% and increasing client efficiency by
+        <span class="font-bold">25%.</span>
+      </div>
+      <div class="text-zinc-500">
+        Enhanced user experience with a customizable
+        <span class="font-bold"
+          >theme option, optimizing readability and accessibility.</span
+        >
       </div>
     </div>
+  </a>
+  <div class="cursor-pointer pr-20">
+    <a href="https://www.jbhunt.com/" target="_blank">
+      <img src="/jbhunt.png" class="img-specs" />
+      <div class="text-slate-300 py-2 text-lg border-b-2 border-b-zinc-500">
+        JB HUNT
+      </div>
+      <div class="text-zinc-500">
+        Migrated the UI from Bootstrap to PrimeNG using Angular, enhancing
+        usability and reducing bugs by <span class="font-bold">15%</span>.
+      </div>
+      <div class="text-zinc-500">
+        <span class="font-bold">Refactored legacy code</span>, stabilizing
+        critical workflows and identifying key issues that caused crashes during
+        peak usage, improving application reliability.
+      </div>
+      <div class="text-zinc-500">
+        <span class="font-bold">Optimized backend Java services</span>, reducing
+        Common Vulnerabilities and Exposures (CVEs) by
+        <span class="font-bold">90%</span>, significantly enhancing security and
+        performance.
+      </div>
+    </a>
   </div>
-</div> -->
-
-<div class="flex justify-center px-20 pt-30 pb-15 text-slate-300 text-4xl">
-  Projects
-</div>
-
-<div class="px-20 grid grid-cols-2 gap-4 place-items-center">
-  <img src="/becker.png" class="hover:scale-125 img-specs cursor-pointer" />
-  <img src="/jbhunt.png" class="hover:scale-125 img-specs cursor-pointer" />
-  <img
-    src="/expense.png"
-    class="hover:scale-125 img-specs cursor-pointer filter-img"
-  />
-  <img
-    src="/yourstory.png"
-    class="hover:scale-125 img-specs cursor-pointer filter-img"
-  />
-</div>
-<div class="flex justify-center pb-20 cursor-pointer hover-animate">
-  <p class="text-slate-300 p-0 hover:underline hover:underline-offset-8">
-    See all Projects ->
-  </p>
 </div>

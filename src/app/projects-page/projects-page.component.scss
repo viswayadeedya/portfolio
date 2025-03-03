@@ -1,0 +1,14 @@
+.img-specs {
+    margin-right: 1rem;
+    width: 35rem;
+    height: 17rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover-animate:hover {
+    transform: scale(1.2);
+  }
+  
+  .filter-img {
+    filter: invert(1);
+  }
